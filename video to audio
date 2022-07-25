@@ -1,0 +1,6 @@
+import moviepy.editor as mp
+import cv2
+cap = cv2.VideoCapture('chaplin.mp4')
+
+video= mp.VideoFileClip(cap)
+video.audio.write_audiofile("cap.mp3")
